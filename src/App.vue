@@ -1,8 +1,25 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+
+    <header class="bg-success d-flex flex-row text-white">
+<h3 class="m-3">User List</h3>
+<router-link to="/">
+<button class="btn text-white">
+  <i class="fas fa-users my-2 fa-2x"></i>
+</button>
+</router-link>
+
+<router-link to="/message-List">
+  <button class="btn text-white">
+<i class="fas fa-comments my-2 fa-2x"></i>
+</button>  
+</router-link>
+
+
+</header>
+
+    
+
+
   <router-view/>
 </template>
 
