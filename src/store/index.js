@@ -1,16 +1,13 @@
 // import { VueElement } from 'vue'
 import { createStore } from 'vuex'
 import users from "./users"
+import message from "./message";
 
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+
   modules: {
-    users
+    users,
+    message
   }
 })

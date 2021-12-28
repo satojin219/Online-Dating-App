@@ -16,8 +16,8 @@ export default{
   },
   actions: {
     fetchUsers(context){
-      fetch("https://randomuser.me/api/").then(res => res.json()).then(data =>{
-        let users = [];
+      let users = [];
+      fetch("https://randomuser.me/api/?results=50").then(res => res.json()).then(data =>{
         data.results.forEach(user => {
           users.push({
             id: user.login.uuid,

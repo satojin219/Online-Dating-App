@@ -1,7 +1,7 @@
 <template>
 
     <header class="bg-success d-flex flex-row text-white">
-<h3 class="m-3">User List</h3>
+<h3 class="m-3">Online Dating App</h3>
 <router-link to="/">
 <button class="btn text-white">
   <i class="fas fa-users my-2 fa-2x"></i>
@@ -22,6 +22,14 @@
 
   <router-view/>
 </template>
+
+<script>
+export default {
+  created: function(){
+    this.$store.dispatch("fetchUsers");
+  }
+  }
+</script>
 
 <style>
 #app {
