@@ -6,7 +6,7 @@
       class="m-3 p-5 shadow text-center"
       style="width:250px; height:350px"
     >
-        <img v-bind:src="user.picture.large"  class="rounded-circle" alt="" />
+        <img v-bind:src="user.picture.large"  class="rounded-circle" alt=""/>
       <h5 class="my-3 font-weight-bold">{{ user.name }}</h5>
       <p class="detail">
         <i class="fas fa-map-marker-alt"></i> {{ user.country }} / Age:{{
@@ -14,7 +14,9 @@
         }}
       </p>
       <div class="d-flex justify-content-between col-12">
+        <router-link :to="{name :'user',params: {id : user.id}}">
         <button class="btn btn-success text-white">Profile</button>
+        </router-link>
         <button class="btn btn-light">
           <i class="fas fa-comment-dots"></i>
         </button>
@@ -26,6 +28,7 @@
 <script>
 export default {
   name: "userList",
+
   computed: {
     listUsers() {
       return this.$store.state.users.users;

@@ -4,11 +4,10 @@ export default{
   state: {
     users:[]
   },
-  getter:{
-    getUserById(id){
-      return this.state.users.find(user => user[id] === id);
-    }
-  },
+  getters:{
+    getUserById: state => id => {
+      return state.users.find(user => user.id === id)}
+    },
   mutations: {
     setUsers : function(state,payload){
       state.users = payload;
