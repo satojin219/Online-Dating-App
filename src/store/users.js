@@ -20,7 +20,7 @@ export default{
         data.results.forEach(user => {
           users.push({
             id: user.login.uuid,
-            name: user.name.first + user.name.last,
+            userName: user.name.first + user.name.last,
             gender: user.gender,
             age: user.dob.age,
             country: user.location.country,

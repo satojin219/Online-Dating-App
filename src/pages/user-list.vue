@@ -7,7 +7,7 @@
       style="width:250px; height:350px"
     >
         <img v-bind:src="user.picture.large"  class="rounded-circle" alt=""/>
-      <h5 class="my-3 font-weight-bold">{{ user.name }}</h5>
+      <h5 class="my-3 font-weight-bold">{{ user.userName }}</h5>
       <p class="detail">
         <i class="fas fa-map-marker-alt"></i> {{ user.country }} / Age:{{
           user.age
@@ -17,9 +17,11 @@
         <router-link :to="{name :'user',params: {id : user.id}}">
         <button class="btn btn-success text-white">Profile</button>
         </router-link>
+        <router-link :to="'/user/'+user.id+'/chat'">
         <button class="btn btn-light">
           <i class="fas fa-comment-dots"></i>
         </button>
+        </router-link>
       </div>
     </div>
   </div>
