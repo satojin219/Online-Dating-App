@@ -3,7 +3,7 @@ import userList from '../pages/user-list.vue'
 
 const routes = [
   {
-    path: '/online-dating-app',
+    path: '/Online-Dating-App',
     name: 'userList',
     component: userList
   },
