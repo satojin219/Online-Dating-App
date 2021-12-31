@@ -2,7 +2,7 @@
 
     <header class="bg-success d-flex flex-row text-white">
 <h3 class="m-3">Online Dating App</h3>
-<router-link to="/">
+<router-link to="/Online-Dating-App">
 <button class="btn text-white">
   <i class="fas fa-users my-2 fa-2x"></i>
 </button>
