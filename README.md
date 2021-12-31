@@ -1,6 +1,6 @@
 # online-dating-app
 
-##URL
+## URL
 https://satojin219.github.io/Online-Dating-App
 
 ## Project setup
